@@ -1,2 +1,2 @@
-# numpy-practice
-numpy-practice
+# Dive-into-numpy
+Dive-into-numpy
