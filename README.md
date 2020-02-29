@@ -36,7 +36,33 @@ NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决
 
 ### ndarry
 
+ndarray 实际上是多维数组的含义。在 NumPy 数组中，维数称为秩（rank），一维数组的秩为 1，二维数组的秩为 2，以此类推。在 NumPy 中，每一个线性的数组称为一个轴（axes），其实秩就是描述轴的数量。
 
+构建ndarry：
+
+```python
+import numpy as np
+
+a = np.array([[1, 2, 3], 
+              [4, 5, 6], 
+              [7, 8, 9]])
+a[1,1]=10
+print("shape: ", a.shape)
+print("dtype: ", a.dtype)
+print(a)
+```
+
+此时数组`a`就有两个轴，`0`和`1`。
+
+![axis](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png)
+
+当`axis=0`，该轴上的元素分为三组：
+
+![axis0](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png)
+
+当axis=1，该轴上的元素也同样分为三组:
+
+![axis1](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis1.png)
 
 ### ufunc
 
@@ -71,3 +97,5 @@ numpy-100是将numpy的常用操作整理为练习题[下载链接](https://gith
 [1] Rakshith Vasudev: https://medium.com/hackernoon/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51
 
 [2] Piotr Skalski: https://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795
+
+[3] [https://flat2010.github.io/2017/05/31/Numpy%E6%95%B0%E7%BB%84%E8%A7%A3%E6%83%91/](https://flat2010.github.io/2017/05/31/Numpy数组解惑/)
