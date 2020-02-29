@@ -36,7 +36,11 @@ NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决
 
 ### ndarry
 
+
+
 ### ufunc
+
+
 
 ## [NumPy进阶](#content)
 
@@ -44,7 +48,7 @@ NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决
 
 ## [numpy-100](#content)
 
-numpy-100是将numpy的常用操作整理为练习题，学习完以上内容可以使用此练习题检测自己的学习效果，[numpy-100原作者](https://github.com/rougier/numpy-100)。黄海广博士也对此进行了整理[numpy-100](https://github.com/fengdu78/Data-Science-Notes/tree/master/2.numpy/numpy-100)。
+numpy-100是将numpy的常用操作整理为练习题[下载链接](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-NumPy/blob/master/numpy-100.zip)，学习完以上内容可以使用此练习题检测自己的学习效果，[numpy-100原作者](https://github.com/rougier/numpy-100)。黄海广博士也对此进行了整理[numpy-100](https://github.com/fengdu78/Data-Science-Notes/tree/master/2.numpy/numpy-100)。
 
 **使用方法** 文件夹有三个不同的ipynb文件:
 
@@ -61,8 +65,6 @@ numpy-100是将numpy的常用操作整理为练习题，学习完以上内容可
 有答案代码和注释的文件
 
 你可以在**100_Numpy_exercises_no_solution.ipynb** 里输入代码，看看运行结果是否和**100_Numpy_exercises.ipynb** 里面的内容一致。
-
-
 
 ## [参考文献](#content)
 
