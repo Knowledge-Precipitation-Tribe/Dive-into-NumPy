@@ -1,7 +1,7 @@
 # Dive-into-NumPy
 [NumPy中文网](https://www.numpy.org.cn/)
 
-![numpy_logo](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/NumPy_logo.png)
+<div><a href = "https://www.numpy.org.cn/"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png" alt="logo" align=center/></a></div>
 
 ## 项目介绍
 
@@ -54,15 +54,15 @@ print(a)
 
 此时数组`a`就有两个轴，`0`和`1`。
 
-<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png" width = "300" height = "200" alt="axis" align=center /></div>
+<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png" width = "300" height = "200" alt="axis" align=center /></div>
 
 当`axis=0`，该轴上的元素分为三组：
 
-![axis0](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png)
+<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png" width = "300" height = "200" alt="axis" align=center /></div>
 
 当axis=1，该轴上的元素也同样分为三组:
 
-![axis1](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis1.png)
+<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis1.png" width = "300" height = "200" alt="axis" align=center /></div>
 
 ### ufunc
 
