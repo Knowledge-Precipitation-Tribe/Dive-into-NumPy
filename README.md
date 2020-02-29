@@ -1,7 +1,7 @@
 # Dive-into-NumPy
 [NumPy中文网](https://www.numpy.org.cn/)
 
-<div><a href = "https://www.numpy.org.cn/"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png" alt="logo" align=center/></a></div>
+<div><a href = "https://www.numpy.org.cn/"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/NumPy_logo.png" alt="logo" align=center/></a></div>
 
 ## 项目介绍
 
