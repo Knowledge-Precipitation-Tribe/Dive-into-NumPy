@@ -36,7 +36,7 @@ NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决
 
 ### ndarry
 
-
+### ufunc
 
 ## [NumPy进阶](#content)
 
@@ -44,12 +44,28 @@ NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决
 
 ## [numpy-100](#content)
 
-numpy-100是将numpy的常用操作整理为练习题，学习完以上内容可以使用此练习题检测自己的学习效果，[numpy-100原作者](https://github.com/rougier/numpy-100)。也可参考黄海广整理的[numpy-100](https://github.com/fengdu78/Data-Science-Notes/tree/master/2.numpy/numpy-100)。
+numpy-100是将numpy的常用操作整理为练习题，学习完以上内容可以使用此练习题检测自己的学习效果，[numpy-100原作者](https://github.com/rougier/numpy-100)。黄海广博士也对此进行了整理[numpy-100](https://github.com/fengdu78/Data-Science-Notes/tree/master/2.numpy/numpy-100)。
+
+**使用方法** 文件夹有三个不同的ipynb文件:
+
+1. **100_Numpy_exercises_no_solution.ipynb**
+
+没有答案代码的文件，这个是你做的练习
+
+2. **100_Numpy_exercises_with_hint.ipynb**
+
+没有答案代码的文件，但有提示，这个你也可以用来练习
+
+3. **100_Numpy_exercises.ipynb**
+
+有答案代码和注释的文件
+
+你可以在**100_Numpy_exercises_no_solution.ipynb** 里输入代码，看看运行结果是否和**100_Numpy_exercises.ipynb** 里面的内容一致。
 
 
 
 ## [参考文献](#content)
 
-[1] Anne Bonner: https://towardsdatascience.com/the-ultimate-beginners-guide-to-numpy-f5a2f99aef54
+[1] Rakshith Vasudev: https://medium.com/hackernoon/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51
 
 [2] Piotr Skalski: https://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795
