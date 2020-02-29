@@ -34,7 +34,14 @@ NumPy是Python中科学计算的基础包。它是一个Python库，提供多维
 
 NumPy里有两个重要的对象：ndarray（N-dimensional array object）解决了多维数组问题，而 ufunc（universal function object）则是解决对数组进行处理的函数。
 
-### ndarry
+- <a href = "#ndarry">ndarry</a>
+- <a href = "#ufunc">ufunc</a>
+  - <a href = "#连续数组的创建">连续数组的创建</a>
+  - <a href = "#算术运算">算术运算</a>
+  - <a href = "#统计函数">统计函数</a>
+  - <a href = "#排序函数">排序函数</a>
+
+### [ndarry](#content)
 
 ndarray 实际上是多维数组的含义。在 NumPy 数组中，维数称为秩（rank），一维数组的秩为 1，二维数组的秩为 2，以此类推。在 NumPy 中，每一个线性的数组称为一个轴（axes），其实秩就是描述轴的数量。
 
@@ -43,14 +50,30 @@ ndarray 实际上是多维数组的含义。在 NumPy 数组中，维数称为�
 ```python
 import numpy as np
 
-a = np.array([[1, 2, 3], 
-              [4, 5, 6], 
+a = np.array([[1, 2, 3],
+              [4, 5, 6],
               [7, 8, 9]])
 a[1,1]=10
 print("shape: ", a.shape)
 print("dtype: ", a.dtype)
-print(a)
+print("a: \n", a)
+print("a[:, 1]: \n", a[:,1])
 ```
+
+输出结果：
+
+```python
+shape:  (3, 3)
+dtype:  int64
+a: 
+ [[ 1  2  3]
+ [ 4 10  6]
+ [ 7  8  9]]
+a[:, 1]: 
+ [ 2 10  8]
+```
+
+
 
 此时数组`a`就有两个轴，`0`和`1`。
 
@@ -64,13 +87,140 @@ print(a)
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis1.png" width = "300" height = "200" alt="axis" align=center /></div>
 
-### ufunc
+### [ufunc](#content)
 
+ufunc 是 universal function 的缩写，是不是听起来就感觉功能非常强大？确如其名，它能对数组中每个元素进行函数操作。NumPy 中很多 ufunc 函数计算速度非常快，因为都是采用 C 语言实现的。
 
+#### [连续数组的创建](#content)
+
+```python
+import numpy as np
+
+x1 = np.arange(1,11,2) #参数为：起始值，终止值，步长（不包括终止值）
+x2 = np.linspace(1,9,5) #参数为：起始值，终止值，元素个数（包括终止值）
+```
+
+#### [算术运算](#content)
+
+```python
+import numpy as np
+
+x1 = np.arange(1,11,2)
+x2 = np.linspace(2,10,5)
+
+print("x1: \n", x1)
+print("x2: \n", x2)
+print("add: \n", np.add(x1, x2)) #加
+print("subtract: \n", np.subtract(x1, x2))#减
+print("multiply: \n", np.multiply(x1, x2))#乘
+print("divide: \n", np.divide(x1, x2))#除
+print("power: \n", np.power(x1, x2))#求幂
+print("remainder: \n", np.remainder(x1, x2))#取余
+```
+
+输出结果：
+
+```python
+x1: 
+ [1 3 5 7 9]
+x2: 
+ [ 2.  4.  6.  8. 10.]
+add: 
+ [ 3.  7. 11. 15. 19.]
+subtract: 
+ [-1. -1. -1. -1. -1.]
+multiply: 
+ [ 2. 12. 30. 56. 90.]
+divide: 
+ [0.5        0.75       0.83333333 0.875      0.9       ]
+power: 
+ [1.0000000e+00 8.1000000e+01 1.5625000e+04 5.7648010e+06 3.4867844e+09]
+remainder: 
+ [1. 3. 5. 7. 9.]
+```
+
+#### [统计函数](#content)
+
+```python
+#统计矩阵中的最大值与最小值
+import numpy as np
+
+a = np.array([[8,6,1],
+              [2,4,7],
+              [3,9,5]])
+print("a: \n", a)
+print("min: \n", np.amin(a))#整个矩阵中最小值
+print("axis=0 min: \n", np.amin(a,axis=0))#axis=0方向的最小值
+print("axis=1 min: \n", np.amin(a,axis=1))#axis=1方向的最小值
+#max与此相同
+print("median： \n", np.median(a))#求中位数
+print("mean: \n", np.mean(a))#求均值
+print("average: \n", np.average(a))#求平均值
+print("std: \n", np.std(a))#求标准差
+print("var: \n", np.var(a))#求方差
+```
+
+输出结果：
+
+```python
+a: 
+ [[8 6 1]
+ [2 4 7]
+ [3 9 5]]
+min: 
+ 1
+axis=0 min: 
+ [2 4 1]
+axis=1 min: 
+ [1 2 3]
+median： 
+ 5.0
+mean: 
+ 5.0
+average: 
+ 5.0
+std: 
+ 2.581988897471611
+var: 
+ 6.666666666666667
+```
+
+#### [排序函数](#content)
+
+```python
+import numpy as np
+
+a = np.array([[4,3,2],
+              [2,4,1]])
+print("a: \n", a)
+print("sort: \n", np.sort(a))
+print("axis=None sort:\n", np.sort(a, axis=None))
+print("axis=0 sort: \n", np.sort(a, axis=0))
+print("axis=1 sort: \n", np.sort(a, axis=1))
+```
+
+输出结果：
+
+```python
+a: 
+ [[4 3 2]
+ [2 4 1]]
+sort: 
+ [[2 3 4]
+ [1 2 4]]
+axis=None sort:
+ [1 2 2 3 4 4]
+axis=0 sort: 
+ [[2 3 1]
+ [4 4 2]]
+axis=1 sort: 
+ [[2 3 4]
+ [1 2 4]]
+```
 
 ## [NumPy进阶](#content)
 
-
+NumPy进阶操作请查看：[链接]()
 
 ## [numpy-100](#content)
 
@@ -98,4 +248,4 @@ numpy-100是将numpy的常用操作整理为练习题[下载链接](https://gith
 
 [2] Piotr Skalski: https://towardsdatascience.com/lets-code-a-neural-network-in-plain-numpy-ae7e74410795
 
-[3] [https://flat2010.github.io/2017/05/31/Numpy%E6%95%B0%E7%BB%84%E8%A7%A3%E6%83%91/](https://flat2010.github.io/2017/05/31/Numpy数组解惑/)
+[3] [https://flat2010.github.io/2017/05/31/Numpy数组解惑](https://flat2010.github.io/2017/05/31/Numpy数组解惑/)
