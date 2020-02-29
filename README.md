@@ -54,7 +54,7 @@ print(a)
 
 此时数组`a`就有两个轴，`0`和`1`。
 
-![axis](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png)
+<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png" width = "300" height = "200" alt="axis" align=center /></div>
 
 当`axis=0`，该轴上的元素分为三组：
 
