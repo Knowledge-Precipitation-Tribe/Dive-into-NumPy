@@ -2,7 +2,6 @@
 [NumPy中文网](https://www.numpy.org.cn/)
 
 <div><a href = "https://www.numpy.org.cn/"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/NumPy_logo.png" alt="logo" align=center/></a></div>
-
 ## 项目介绍
 
 本项目名为：动手学NumPy。包含以下内容
@@ -78,15 +77,12 @@ a[:, 1]:
 此时数组`a`就有两个轴，`0`和`1`。
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis.png" width = "300" height = "200" alt="axis" align=center /></div>
-
 当`axis=0`，该轴上的元素分为三组：
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis0.png" width = "300" height = "200" alt="axis" align=center /></div>
-
 当axis=1，该轴上的元素也同样分为三组:
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Dive-into-numpy/blob/master/images/axis1.png" width = "300" height = "200" alt="axis" align=center /></div>
-
 ### [ufunc](#content)
 
 ufunc 是 universal function 的缩写，是不是听起来就感觉功能非常强大？确如其名，它能对数组中每个元素进行函数操作。NumPy 中很多 ufunc 函数计算速度非常快，因为都是采用 C 语言实现的。
@@ -220,7 +216,7 @@ axis=1 sort:
 
 ## [NumPy进阶](#content)
 
-NumPy进阶操作请查看：[链接]()
+NumPy进阶操作请查看：[链接](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-NumPy/tree/master/jupyter-numpy)
 
 ## [numpy-100](#content)
 
